@@ -77,7 +77,6 @@ public class JobData {
 
             if (aValue.toLowerCase().contains(value.toLowerCase())) {
                 jobs.add(row);
-                break;
             }
         }
 
@@ -103,6 +102,7 @@ public class JobData {
             for (String aValue : row.values())
                 if (aValue.toLowerCase().contains(value.toLowerCase())) {
                     jobs.add(row);
+                    break;
                 }
         }
 
